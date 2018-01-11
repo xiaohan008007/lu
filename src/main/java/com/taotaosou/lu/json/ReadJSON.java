@@ -12,7 +12,10 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
- 
+
+/**
+ * json测试用例
+ */
 public class ReadJSON {
     public static void main(String args[]) throws IOException{
         try {
