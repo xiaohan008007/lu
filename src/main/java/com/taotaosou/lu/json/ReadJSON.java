@@ -19,7 +19,8 @@ import com.google.gson.JsonSyntaxException;
 public class ReadJSON {
     public static void main(String args[]) throws IOException{
         try {
-             
+             //注释不见了
+            System.out.println(11);
             JsonParser parser=new JsonParser();  //创建JSON解析器
             JsonObject object=(JsonObject) parser.parse(new FileReader("C:\\mysoft\\eclipse\\eclipse-workspace\\lu\\src\\main\\java\\com\\taotaosou\\lu\\json\\test.json"));  //创建JsonObject对象
 //            System.out.println("cat="+object.get("cat").getAsString()); //将json数据转为为String型的数据
