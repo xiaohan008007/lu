@@ -5,8 +5,7 @@ import java.util.TreeMap;
 
 /**
  * hash一致性算法
- * 存在雪崩的情况，所以我们创建多个虚拟节点对应物理机可以利用虚拟节点
- * Created by lijianzhen1 on 2017/9/6.
+ * 不带虚拟节点
  */
 public class HashIdentical {
     //待添加入Hash环的服务器列表
