@@ -124,9 +124,9 @@ public class VirtualHashIdentical extends HashIdentical {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        addTrueNote("192.168.0.0:111");
-//        System.out.println("添加物理机192.168.0.0:111后分配的hash地址\n");
-//        for (String key : keys)
-//            System.out.println(key + "-的hash值为" + getHash(key) + ",被路由到节点" + getServer(key));
+        addTrueNote("192.168.0.0:111");
+        System.out.println("添加物理机192.168.0.0:111后分配的hash地址\n");
+        for (String key : keys)
+            System.out.println(key + "-的hash值为" + getHash(key) + ",被路由到节点" + getServer(key));
     }
 }
