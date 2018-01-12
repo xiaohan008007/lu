@@ -1,12 +1,11 @@
 package com.taotaosou.lu.redis.secondKill.aop;
 
+import com.taotaosou.lu.redis.secondKill.exception.CacheLockException;
+import com.taotaosou.lu.redis.secondKill.util.RedisLock;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-
-import com.taotaosou.lu.redis.secondKill.SecKillImpl;
-import com.taotaosou.lu.redis.secondKill.exception.CacheLockException;
-import com.taotaosou.lu.redis.secondKill.util.RedisLock;
 
 public class CacheLockInterceptor implements InvocationHandler{
     public static int ERROR_COUNT  = 0;
@@ -16,7 +15,6 @@ public class CacheLockInterceptor implements InvocationHandler{
         this.proxied = proxied;
     }
 
-    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
     	
         CacheLock cacheLock = method.getAnnotation(CacheLock.class);

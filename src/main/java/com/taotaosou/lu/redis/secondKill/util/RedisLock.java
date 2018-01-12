@@ -1,7 +1,6 @@
 package com.taotaosou.lu.redis.secondKill.util;
 import java.util.Random;
 
-import com.taotaosou.lu.redis.secondKill.SecKillImpl;
 
 
 
